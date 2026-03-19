@@ -104,11 +104,12 @@ confirmarSenha.addEventListener("input", (event) => {
 })
 
 const createDisplayMsgError = (mensagem) => {
+  msgError.style.color = "red"
   console.log(mensagem)
-  createDisplayMsgError.textContent = mensagem;
+  msgError.textContent = mensagem;
 
   setTimeout(() => {
-    createDisplayMsgError.textContent = "";
+    msgError.textContent = "";
     console.log("Voce nao pode mandar o formulario, algo esta errado")
   }, 5000)
 }
